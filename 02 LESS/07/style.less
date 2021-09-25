@@ -1,0 +1,66 @@
+﻿.b-line {
+  border-width: 5px;
+  border-style: solid;
+}
+
+// .b-color {
+//   border-color: #555; //Domieszka bez parametru
+// }
+
+.b-color (@color: violet) {
+  border-color: @color !important; // Domieszka z parametrem
+}
+
+// .b-color {
+//   border-color: #ddd; //Domieszka bez parametru
+// }
+// .b-color {
+//   border-color: #ddd; //Domieszka bez parametru
+//   background-color: #ddd;
+// }
+
+.b-color (@color; @bg-color) {
+  border-color: @color; // Domieszka z parametrem
+  background-color: @bg-color;
+}
+
+.margins (@top: 0; @right: 0; @bottom: 50px; @left: 0px) {
+  // margin: @top @left @bottom @right;
+  // padding: @top @left @bottom @right;
+  margin: @arguments;
+  padding: @arguments;
+}
+.margins (@par) {
+  margin: @par;
+  padding: @par;
+}
+.margins (@par1: 1px 2px 3px 4px, @par2: 5px 6px 7px 8px) {
+  margin: @par1;
+  padding: @par2;
+}
+
+.level-1 {
+  // .b-color(red);
+  .b-color();
+}
+
+.level-2 {
+  .b-color(#0f0);
+  // .b-color();
+  .margins(20px, 40px, 80px, 160px);
+  .margins();
+  .margins(10px 20px 30px 40px);
+  .margins(10px 20px 30px 40px, 50px 60px 70px 80px); // 2 listy
+  .margins(10px 20px 30px 40px); // 1 lista
+  .margins(); // Brak listy - parametry domyślne
+}
+
+.level-3 {
+  .b-color(blue, yellow);
+  height: 200px;
+}
+
+div {
+  //.b-line  // Lepiej z nawiasami
+  .b-line();
+}

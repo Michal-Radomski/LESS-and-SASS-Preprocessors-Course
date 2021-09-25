@@ -1,0 +1,32 @@
+.b-line {
+  border-width: 5px;
+  border-style: solid;
+}
+.level-1 {
+  border-color: violet !important;
+}
+.level-2 {
+  border-color: #0f0 !important;
+  margin: 20px 40px 80px 160px;
+  padding: 20px 40px 80px 160px;
+  margin: 10px 20px 30px 40px 50px 60px 70px 80px 50px 0px;
+  padding: 10px 20px 30px 40px 50px 60px 70px 80px 50px 0px;
+  padding: 50px 60px 70px 80px;
+  margin: 10px 20px 30px 40px 0 50px 0px;
+  padding: 10px 20px 30px 40px 0 50px 0px;
+  padding: 10px 20px 30px 40px;
+  margin: 10px 20px 30px 40px;
+  margin: 0 0 50px 0px;
+  padding: 0 0 50px 0px;
+  margin: 1px 2px 3px 4px;
+  padding: 5px 6px 7px 8px;
+}
+.level-3 {
+  border-color: blue;
+  background-color: yellow;
+  height: 200px;
+}
+div {
+  border-width: 5px;
+  border-style: solid;
+}
