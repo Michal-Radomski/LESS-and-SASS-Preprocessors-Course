@@ -1,0 +1,65 @@
+/*
+
+	rgb(red, green, blue) - zwraca kolor
+
+		red, green, blue - liczby całkowite 0-255
+
+	rgba(red, green, blue, alpha) - zwraca kolor uwzględniając przezroczystość
+
+		red, green, blue - liczby całkowite 0-255
+		alpha - wartość z zakresu 0-1 (lub 0% - 100%)
+			0 (lub 0%) 	- niewidoczne
+			1 (100%)	- widoczne
+
+	argb(kolor) - zwraca kolor zawierający uwzględniając przezroczystość 
+					w postaci interpretowanej przez IE, .NET czy Android
+
+		kolor - kolor w postaci np: rgba(90, 23, 148, 0.5)
+
+	hsl(odcień, nasycenie, światło białe) - zwraca kolor
+
+		odcień - wartość z zakresu 0-360
+		nasycenie - wartość z zakresu 0-1 (lub 0% - 100%)
+		światło białe - wartość z zakresu 0-1 (lub 0% - 100%)
+
+
+	hsla(odcień, nasycenie, światło białe, alpha) - zwraca kolor uwzględniając przezroczystość
+
+		odcień - wartość z zakresu 0-360
+		nasycenie - wartość z zakresu 0-1 (lub 0% - 100%)
+		światło białe - wartość z zakresu 0-1 (lub 0% - 100%) 
+		alpha - przezroczystość, wartość z zakresu 0-1 (lub 0% - 100%)	
+
+			0 (lub 0%) 	- niewidoczne
+			1 (100%)	- widoczne
+
+
+	hsv(odcień, nasycenie, światło białe) - zwraca kolor w przestrzeni barw Photoshopa
+
+		odcień - wartość z zakresu 0-360
+		nasycenie - wartość z zakresu 0-1 (lub 0% - 100%)
+		światło białe - wartość z zakresu 0-1 (lub 0% - 100%)
+
+
+	hsva(odcień, nasycenie, światło białe, alpha) - zwraca kolor w przestrzeni barw Photoshopa 
+													uwzględniając przezroczystość
+
+		odcień - wartość z zakresu 0-360
+		nasycenie - wartość z zakresu 0-1 (lub 0% - 100%)
+		światło białe - wartość z zakresu 0-1 (lub 0% - 100%)	
+		alpha - przezroczystość, wartość z zakresu 0-1 (lub 0% - 100%)	
+
+			0 (lub 0%) 	- niewidoczne
+			1 (100%)	- widoczne
+
+*/
+div {
+  position: absolute;
+}
+.second {
+  margin: 30px;
+  height: 100px;
+  width: 500px;
+  border: 3px solid red;
+  background-color: rgba(99, 153, 46, 0.7);
+}

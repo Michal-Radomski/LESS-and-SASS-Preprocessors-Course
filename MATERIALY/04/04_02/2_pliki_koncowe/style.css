@@ -1,0 +1,344 @@
+/*
+
+Zaokrąglanie wartości:
+
+	ceil(liczba) - zaokrągla w górę (zwraca taką wartość)
+	floor(liczba) - zaokrągla w dół (zwraca taką wartość)
+	round(liczba) - zaokrągla do najbliższej wartości (zwraca taką wartość)
+
+Operacje matematyczne nieobjęte operatorami:
+
+	sqrt(liczba) - zwraca pierwiastek kwadratowy
+	pow(liczba, wykładnik) - zwraca potęgę liczby o podanym wykładniku
+	mod(liczba1, liczba2) - dzielenie modulo (zwraca resztę z dzielenia)
+
+Porównywanie liczb:
+
+	min(liczba1, ..., liczbaN) - zwraca najmniejszą liczbę z podanych
+	max(liczba1, ..., liczbaN) - zwraca najwiekszą liczbę z podanych
+
+Funkcje trygonometryczne:
+
+	sin(kąt) - zwraca sinus kąta (kąt podajemy w radianach)
+	cos(kąt) - zwraca cosinus kąta (kąt podajemy w radianach)
+	tan(kąt) - zwraca tangens kąta (kąt podajemy w radianach)
+
+Funkcje cyklometryczne:
+
+	asin(wartosć) - zwraca arcus sinus (kąt podajemy w radianach)
+	acos(wartosć) - zwraca arcus cosinus (kąt podajemy w radianach)
+	atan(wartosć) - zwraca arcus tangens (kąt podajemy w radianach)
+
+Inne:
+
+	percentage(liczba) - zwraca ciag znaków w postaci wartości procentowej
+	abs(liczba) - zwraca wartość absolutną
+	pi() - zwraca wartość liczby pi czyli 3.141592653589793
+
+*/
+div {
+  display: inline-block;
+  width: 4px;
+  height: 300px;
+  background-color: red;
+}
+div:nth-child(1) {
+  height: 164.9750125px;
+}
+div:nth-child(2) {
+  height: 179.80039962px;
+}
+div:nth-child(3) {
+  height: 194.328031px;
+}
+div:nth-child(4) {
+  height: 208.41275135px;
+}
+div:nth-child(5) {
+  height: 221.91383079px;
+}
+div:nth-child(6) {
+  height: 234.69637101px;
+}
+div:nth-child(7) {
+  height: 246.63265309px;
+}
+div:nth-child(8) {
+  height: 257.60341363px;
+}
+div:nth-child(9) {
+  height: 267.49903644px;
+}
+div:nth-child(10) {
+  height: 276.22064772px;
+}
+div:nth-child(11) {
+  height: 283.68110401px;
+}
+div:nth-child(12) {
+  height: 289.8058629px;
+}
+div:nth-child(13) {
+  height: 294.53372781px;
+}
+div:nth-child(14) {
+  height: 297.8174595px;
+}
+div:nth-child(15) {
+  height: 299.62424799px;
+}
+div:nth-child(16) {
+  height: 299.93604046px;
+}
+div:nth-child(17) {
+  height: 298.74972157px;
+}
+div:nth-child(18) {
+  height: 296.07714463px;
+}
+div:nth-child(19) {
+  height: 291.94501315px;
+}
+div:nth-child(20) {
+  height: 286.39461402px;
+}
+div:nth-child(21) {
+  height: 279.481405px;
+}
+div:nth-child(22) {
+  height: 271.27446057px;
+}
+div:nth-child(23) {
+  height: 261.85578183px;
+}
+div:nth-child(24) {
+  height: 251.31947708px;
+}
+div:nth-child(25) {
+  height: 239.77082162px;
+}
+div:nth-child(26) {
+  height: 227.32520577px;
+}
+div:nth-child(27) {
+  height: 214.10698204px;
+}
+div:nth-child(28) {
+  height: 200.24822252px;
+}
+div:nth-child(29) {
+  height: 185.88739938px;
+}
+div:nth-child(30) {
+  height: 171.16800121px;
+}
+div:nth-child(31) {
+  height: 156.23709936px;
+}
+div:nth-child(32) {
+  height: 141.24387849px;
+}
+div:nth-child(33) {
+  height: 126.33814588px;
+}
+div:nth-child(34) {
+  height: 111.6688347px;
+}
+div:nth-child(35) {
+  height: 97.38251585px;
+}
+div:nth-child(36) {
+  height: 83.62193351px;
+}
+div:nth-child(37) {
+  height: 70.52457886px;
+}
+div:nth-child(38) {
+  height: 58.22131636px;
+}
+div:nth-child(39) {
+  height: 46.83507612px;
+}
+div:nth-child(40) {
+  height: 36.4796257px;
+}
+div:nth-child(41) {
+  height: 27.25843334px;
+}
+div:nth-child(42) {
+  height: 19.26363414px;
+}
+div:nth-child(43) {
+  height: 12.57510949px;
+}
+div:nth-child(44) {
+  height: 7.25968892px;
+}
+div:nth-child(45) {
+  height: 3.37048235px;
+}
+div:nth-child(46) {
+  height: 0.94634945px;
+}
+div:nth-child(47) {
+  height: 0.01151137px;
+}
+div:nth-child(48) {
+  height: 0.57530867px;
+}
+div:nth-child(49) {
+  height: 2.63210811px;
+}
+div:nth-child(50) {
+  height: 6.1613588px;
+}
+div:nth-child(51) {
+  height: 11.12779765px;
+}
+div:nth-child(52) {
+  height: 17.48180164px;
+}
+div:nth-child(53) {
+  height: 25.15988367px;
+}
+div:nth-child(54) {
+  height: 34.08532687px;
+}
+div:nth-child(55) {
+  height: 44.16895116px;
+}
+div:nth-child(56) {
+  height: 55.31000432px;
+}
+div:nth-child(57) {
+  height: 67.39716861px;
+}
+div:nth-child(58) {
+  height: 80.30967309px;
+}
+div:nth-child(59) {
+  height: 93.91850028px;
+}
+div:nth-child(60) {
+  height: 108.08767527px;
+}
+div:nth-child(61) {
+  height: 122.67562436px;
+}
+div:nth-child(62) {
+  height: 137.53658958px;
+}
+div:nth-child(63) {
+  height: 152.52208507px;
+}
+div:nth-child(64) {
+  height: 167.48238073px;
+}
+div:nth-child(65) {
+  height: 182.26799821px;
+}
+div:nth-child(66) {
+  height: 196.73120453px;
+}
+div:nth-child(67) {
+  height: 210.72748809px;
+}
+div:nth-child(68) {
+  height: 224.11700267px;
+}
+div:nth-child(69) {
+  height: 236.76596466px;
+}
+div:nth-child(70) {
+  height: 248.54798981px;
+}
+div:nth-child(71) {
+  height: 259.34535602px;
+}
+div:nth-child(72) {
+  height: 269.05017958px;
+}
+div:nth-child(73) {
+  height: 277.56549309px;
+}
+div:nth-child(74) {
+  height: 284.80621437px;
+}
+div:nth-child(75) {
+  height: 290.69999652px;
+}
+div:nth-child(76) {
+  height: 295.1879508px;
+}
+div:nth-child(77) {
+  height: 298.22523508px;
+}
+div:nth-child(78) {
+  height: 299.78150181px;
+}
+div:nth-child(79) {
+  height: 299.84120128px;
+}
+div:nth-child(80) {
+  height: 298.40373699px;
+}
+div:nth-child(81) {
+  height: 295.48347163px;
+}
+div:nth-child(82) {
+  height: 291.1095835px;
+}
+div:nth-child(83) {
+  height: 285.32577506px;
+}
+div:nth-child(84) {
+  height: 278.18983621px;
+}
+div:nth-child(85) {
+  height: 269.77306689px;
+}
+div:nth-child(86) {
+  height: 260.15956468px;
+}
+div:nth-child(87) {
+  height: 249.44538451px;
+}
+div:nth-child(88) {
+  height: 237.73757893px;
+}
+div:nth-child(89) {
+  height: 225.15312847px;
+}
+div:nth-child(90) {
+  height: 211.81777279px;
+}
+div:nth-child(91) {
+  height: 197.86475435px;
+}
+div:nth-child(92) {
+  height: 183.43348712px;
+}
+div:nth-child(93) {
+  height: 168.66816353px;
+}
+div:nth-child(94) {
+  height: 153.71631382px;
+}
+div:nth-child(95) {
+  height: 138.72733193px;
+}
+div:nth-child(96) {
+  height: 123.85098282px;
+}
+div:nth-child(97) {
+  height: 109.23590604px;
+}
+div:nth-child(98) {
+  height: 95.02813061px;
+}
+div:nth-child(99) {
+  height: 81.36961593px;
+}
+div:nth-child(100) {
+  height: 68.39683337px;
+}

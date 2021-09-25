@@ -1,0 +1,27 @@
+/*
+
+	Zmienne mogą przechowywać m.in.:
+
+	- wartości numeryczne (np. 20, 20px, 20%, 20em)
+	- wartości w postaci listy pewnych dancych (np. 1px solid green)
+	- wartości tekstowe (np. "Wartość tekstowa")
+	- kolory (np. green, #000, #ff00aa, rgb(250, 250, 250))
+	- adresy URL ('obrazek.jpg', 'images/obrazek.jpg', 'http://images/obrazek.jpg')
+	- właściwości (np. margin, font-size)
+	- selektory (np. h1, p, p.klasa, .klasa, #id)
+	- nazwy innych zmiennych (@nazwa-zmiennej)
+
+
+	Zmienne mogą ponadto m.in:
+	- przyjmować wartości innych zmiennych
+	- przyjmować wartości będące wynikiem operacji arytmetycznych
+	- nadpisywać wartości wcześniej zdefiniowane
+
+
+	Operatory arytmetyczne:
+	+ - * /
+
+*/
+p:after {
+  content: '10';
+}

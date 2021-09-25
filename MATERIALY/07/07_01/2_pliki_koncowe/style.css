@@ -1,0 +1,48 @@
+/*
+
+http://sass-lang.com/documentation/Sass/Script/Functions.html
+
+hsl($hue, $saturation, $lightness)
+hsla($hue, $saturation, $lightness, $alpha)
+hue($color)
+saturation($color)
+lightness($color)
+adjust-hue($color, $degrees)
+lighten($color, $amount)
+darken($color, $amount)
+saturate($color, $amount)
+desaturate($color, $amount)
+grayscale($color)
+complement($color)
+invert($color, [$weight])
+alpha($color) / opacity($color)
+rgba($color, $alpha)
+opacify($color, $amount)
+transparentize($color, $amount) / fade-out($color, $amount)
+adjust-color($color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha])
+scale-color($color, [$red], [$green], [$blue], [$saturation], [$lightness], [$alpha])
+change-color($color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha])
+ie-hex-str($color) 
+
+*/
+div {
+  width: 70px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  display: inline-block; }
+
+#rgb {
+  background-color: #ff0b17; }
+
+#rgba {
+  background-color: rgba(255, 11, 23, 0.5); }
+
+#red_green_blue {
+  background-color: #cacaca; }
+
+#mix {
+  background-color: purple; }
+
+/*# sourceMappingURL=style.css.map */

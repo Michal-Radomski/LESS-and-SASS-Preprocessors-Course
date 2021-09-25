@@ -1,0 +1,35 @@
+div {
+  height: 50px;
+  border: 1px solid black;
+  /*
+	margin-top: extract(@list, 1);
+	margin-right: extract(@list, 2);
+	margin-bottom: extract(@list, 3);	
+	margin-left: extract(@list, 4);		
+	*/
+  /*
+	margin-top: extract(@arguments, 1);
+	margin-right: extract(@arguments, 2);
+	margin-bottom: extract(@arguments, 3);	
+	margin-left: extract(@arguments, 4);
+	*/
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+#b5 {
+  background-color: #ffc0cb;
+}
+#b4 {
+  background-color: #ffff00;
+}
+#b3 {
+  background-color: #0000ff;
+}
+#b2 {
+  background-color: #008000;
+}
+#b1 {
+  background-color: #ff0000;
+}

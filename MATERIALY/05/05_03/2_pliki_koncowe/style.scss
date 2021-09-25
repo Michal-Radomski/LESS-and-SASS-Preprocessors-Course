@@ -1,0 +1,67 @@
+﻿/*
+@list: 14, 21 3 4 5, 10;
+
+@length: length(@list);
+@first: extract(@list, 1); 
+@second: extract(@list, 2);
+@last: extract(@list, length(@list));
+@list2-second-el: extract(extract(@list, 2), 2);
+
+#elements:after {
+	content: '@{list}';
+}
+
+#length:after {
+	content: '@{length}';
+}
+
+#first:after {
+	content: '@{first}';
+}
+
+#second:after {
+	content: '@{second}';
+}
+
+#last:after {
+	content: '@{last}';
+}
+
+#list2-second-el:after {
+	content: '@{list2-second-el}';
+}
+
+*/
+
+
+$list: 14, 21 3, 4 5, 10;
+
+$length: length($list);
+$first: nth($list, 1); 
+$second: nth($list, 2);
+$last: nth($list, length($list));
+$list2-second-el: nth(nth($list, 2), 2);
+
+#elements:after {
+	content: '#{$list}';
+}
+
+#length:after {
+	content: '#{$length}';
+}
+
+#first:after {
+	content: '#{$first}';
+}
+
+#second:after {
+	content: '#{$second}';
+}
+
+#last:after {
+	content: '#{$last}';
+}
+
+#list2-second-el:after {
+	content: '#{$list2-second-el}';
+}

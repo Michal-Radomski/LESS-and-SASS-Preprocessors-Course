@@ -1,0 +1,88 @@
+﻿/*
+
+Sprawdzanie typu
+
+iscolor
+isnumber
+isstring
+iskeyword
+isurl
+
+Sprawdzanie jednostek
+
+ispixel
+ispercentage
+isem
+isunit
+
+*/
+
+@result: 'brak operacji';
+
+/*
+//@variable: #001100;
+//@variable: 5;
+//@variable: 5px;
+//@variable: "Jakiś tekst";
+//@variable: ispixel;
+//@variable: "http://adres.pl";
+@variable: url('http://adres.pl');
+
+// Zamiast truth może być inny ciąg znaków
+
+.truth (@a) when (iscolor(@a)) {
+	@result: 'Zmienna przechowuje kolor';
+}
+
+.truth (@a) when (isnumber(@a)) {
+	@result: 'Zmienna przechowuje liczbę';
+}
+
+.truth (@a) when (isstring(@a)) {
+	@result: 'Zmienna przechowuje ciąg znaków';
+}
+
+.truth (@a) when (iskeyword(@a)) {
+	@result: 'Zmienna przechowuje słowo kluczowe';
+}
+
+.truth (@a) when (isurl(@a)) {
+	@result: 'Zmienna przechowuje adres URL';
+}
+
+*/
+
+
+@variable: 5em;
+
+.truth (@a) when (ispixel(@a)) {
+	@result: 'px';
+}
+
+.truth (@a) when (ispercentage(@a)) {
+	@result: '%';
+}
+
+.truth (@a) when (isem(@a)) {
+	@result: 'em';
+}
+
+
+/*
+.truth (@a) when (isunit(@a, 'em')) {
+	@result: 'em';
+}
+*/
+
+
+p.value:after {
+
+	//content: @variable;
+	content: '@{variable}';
+}
+
+p.result:after {
+
+	.truth (@variable);
+	content: @result;
+}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/*
+
+Operatory relacji:  >, >=, =, =<, <
+
+Słowa kluczowe:
+true
+false
+
+, czyli OR (||) - suma logiczna
+and czyli AND (&&) - iloczyn logiczny
+not czyli NOT (!) - negacja
+
+
+@a: 6;
+.mixin(@value; @color: blue) when (@value=6){
+	background-color: @color;
+}
+.mixin(@value; @color: blue) when (default()){
+	border: 3px solid @color;
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;	
+	.mixin(@a);	
+}
+
+*/
+/*
+
+Operatory relacji:  >, >=, <, <=, ==, !=
+
+Wartości logiczne: true, false
+
+Operatory logiczne: and, or, not
+
+*/
+div {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  margin: 50px; }
+
+/*# sourceMappingURL=style.css.map */

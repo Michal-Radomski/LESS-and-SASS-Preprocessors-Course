@@ -1,0 +1,53 @@
+﻿@margin1: 30px;
+@margin2: 5px;
+
+.h1-h2 {
+	font-family: 'Arial';
+	margin-top: @margin1;
+	margin-bottom: @margin1;	
+	color: #333;
+}
+
+.h3-h4 {
+	font-family: 'Verdana';
+	margin-top: @margin2;
+	margin-bottom: @margin2;	
+	color: #555;	
+}
+
+.padding-and-align {
+	padding: 0px 20px 0px 20px;
+	text-align: justify;
+}
+
+
+h1 {
+	font-size: 40px;
+	.h1-h2();
+	.padding-and-align
+	
+}
+
+h2 {
+	font-size: 35px;
+	.h1-h2;	
+	.padding-and-align	
+}
+
+h3 {
+	font-size: 30px;
+	.h3-h4();
+	.padding-and-align	
+}
+
+h4 {
+	font-size: 25px;
+	.h3-h4;
+	.padding-and-align	
+}
+
+p {
+	color: #555;
+	margin: 0px;
+	.padding-and-align
+}

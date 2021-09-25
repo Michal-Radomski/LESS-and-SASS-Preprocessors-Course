@@ -1,0 +1,34 @@
+﻿@h1-red-color: true;
+
+// Styl opcjonalny - sposób 1
+/*h1 when (@red-color = true) {
+  color: red;
+}
+*/
+
+// Styl opcjonalny - sposób 2
+/*
+.optional-header-style() when (@red-color = true) {
+  h1 {
+    color: red;
+  }
+}
+.optional-header-style();
+*/
+
+// Style opcjonalny - sposób 3 - grupa stylów
+
+@h2-blue-color: true;
+
+.optional-header-style() when (@h1-red-color = true) {
+  h1 {
+    color: red;
+  }
+}
+& when (@h2-blue-color = true) {
+  h2 {
+    color: blue;
+  }
+}
+
+.optional-header-style();

@@ -1,0 +1,42 @@
+/*
+
+http://sass-lang.com/documentation/Sass/Script/Functions.html
+
+percentage($number)
+round($number)
+ceil($number)
+floor($number)
+abs($number)
+min($numbers...)
+max($numbers...)
+random([$limit])
+
+*/
+#random:after {
+  content: "-0.8751142602"; }
+
+#percentage:after {
+  content: "-87.5114260169%"; }
+
+#percentage:after {
+  content: "-87.5114260169%"; }
+
+#round:after {
+  content: "-1"; }
+
+#ceil:after {
+  content: "0"; }
+
+#floor:after {
+  content: "-1"; }
+
+#abs:after {
+  content: "0.8751142602"; }
+
+#min:after {
+  content: "-0.8751142602"; }
+
+#max:after {
+  content: "-0.2"; }
+
+/*# sourceMappingURL=style.css.map */

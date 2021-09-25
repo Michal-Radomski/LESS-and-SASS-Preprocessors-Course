@@ -1,0 +1,30 @@
+﻿h1 {
+	font-size: 40px;
+	@extend %h1-h2;
+	@extend %padding-and-align;
+}
+
+h2 {
+	font-size: 35px;
+	@extend %h1-h2;	
+	@extend %padding-and-align;
+}
+
+h3 {
+	font-size: 30px;
+	@extend %h3-h4;	
+	@extend %padding-and-align;
+}
+
+h4 {
+	font-size: 25px;		
+	@extend %h3-h4;
+	@extend %padding-and-align;
+}
+
+p {
+	color: #555;
+	margin: 0px;
+	@extend %padding-and-align;
+}
+

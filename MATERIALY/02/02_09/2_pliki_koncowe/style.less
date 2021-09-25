@@ -1,0 +1,27 @@
+﻿@paragraph-mode: color;
+
+
+.paragraph(greyscale) {
+	margin: 0px;
+	padding: 20px;
+	border: 2px solid #000;
+	color: white;
+	background-color: #999;
+}
+
+.paragraph(color) {
+	margin: 0px;
+	padding: 20px;
+	border: 2px solid yellow;
+	color: yellow;
+	background-color: green;
+}
+
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+p {
+	.paragraph(@paragraph-mode);
+}

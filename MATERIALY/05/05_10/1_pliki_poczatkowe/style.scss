@@ -1,0 +1,53 @@
+﻿$margin1: 30px;
+$margin2: 5px;
+
+@mixin h1-h2 {
+	font-family: 'Arial';
+	margin-top: $margin1;
+	margin-bottom: $margin1;	
+	color: #333;
+}
+
+@mixin h3-h4 {
+	font-family: 'Verdana';
+	margin-top: $margin2;
+	margin-bottom: $margin2;	
+	color: #555;	
+}
+
+@mixin padding-and-align {
+	padding: 0px 20px 0px 20px;
+	text-align: justify;
+}
+
+
+h1 {
+	font-size: 40px;
+	@include h1-h2;
+	@include padding-and-align;	
+}
+
+h2 {
+	font-size: 35px;
+	@include h1-h2;	
+	@include padding-and-align;
+}
+
+h3 {
+	font-size: 30px;
+	@include h3-h4;	
+	@include padding-and-align;
+}
+
+h4 {
+	font-size: 25px;		
+	@include h3-h4;
+	@include padding-and-align;
+}
+
+p {
+	color: #555;
+	margin: 0px;
+	@include padding-and-align;
+}
+
