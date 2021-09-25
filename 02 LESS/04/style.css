@@ -1,0 +1,18 @@
+#elements:after {
+  content: " 10, 20 30 40 50, 100";
+}
+#length:after {
+  content: " 3";
+}
+#first:after {
+  content: " 10";
+}
+#second:after {
+  content: " 20 30 40 50";
+}
+#last:after {
+  content: " 100";
+}
+#list2-second-elem:after {
+  content: " 30";
+}

@@ -1,0 +1,33 @@
+﻿@list: 10, 20, 30, 40, 50, 100;
+@list: 10 20 30 40 50 100; // Nie ma różnicy
+@list: 10, 20 30 40 50, 100; // Teraz są 3 bloki
+@length: length(@list);
+@first: extract(@list, 1);
+@second: extract(@list, 2);
+@last: extract(@list, length(@list));
+
+@list2-second-elem: extract(extract(@list, 2), 2);
+
+#elements:after {
+  content: " @{list}";
+}
+
+#length:after {
+  content: " @{length}";
+}
+
+#first:after {
+  content: " @{first}";
+}
+
+#second:after {
+  content: " @{second}";
+}
+
+#last:after {
+  content: " @{last}";
+}
+
+#list2-second-elem:after {
+  content: " @{list2-second-elem}";
+}
