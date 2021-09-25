@@ -1,0 +1,18 @@
+.top .header h1 {
+  color: red;
+}
+.top .header p {
+  color: green;
+}
+.top p {
+  color: blue;
+}
+.bottom .header h1 {
+  color: yellow;
+}
+.bottom .header p {
+  color: #00ffff;
+}
+.bottom p {
+  color: #ff00ff;
+}
