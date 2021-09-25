@@ -4,11 +4,23 @@ h3,
 h4,
 h5,
 h6 {
-  color: grey;
-}
-p {
-  color: #555;
+  color: rgba(209, 80, 235, 0.5);
 }
 div {
-  color: grey;
+  color: #777;
+  border: 1px solid rgba(209, 80, 235, 0.5);
+  margin: 20px 20px 30px 30px;
+  padding: 0 50px;
+}
+h1 {
+  font-size: 60px;
+}
+p {
+  color: #777;
+}
+p:after {
+  font-size: 2em;
+  color: green;
+  content: "Added text";
+  font-weight: bold;
 }

@@ -1,4 +1,15 @@
-@text-color: #555;
+@text-color: #777;
+@h1-h6-color: rgba(209, 80, 235, 0.5);
+@h1-size: 60px;
+
+@p-font-after-size: 2em;
+@p-text-after: "Added text";
+@p-text-after-color: green;
+@p-text-after-weight: bold;
+
+@div-border: 1px solid @h1-h6-color;
+@div-margin: 20px 20px 30px 30px;
+@div-padding: 0 50px;
 
 h1,
 h2,
@@ -6,13 +17,26 @@ h3,
 h4,
 h5,
 h6 {
-  color: grey;
+  color: @h1-h6-color;
+}
+
+div {
+  color: @text-color;
+  border: @div-border;
+  margin: @div-margin;
+  padding: @div-padding;
+}
+
+h1 {
+  font-size: @h1-size;
 }
 
 p {
   color: @text-color;
 }
-
-div {
-  color: grey;
+p:after {
+  font-size: @p-font-after-size;
+  color: @p-text-after-color;
+  content: @p-text-after;
+  font-weight: @p-text-after-weight;
 }
