@@ -1,0 +1,35 @@
+﻿.main-set {
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: white;
+}
+
+@player-up: player-1;
+@player-down: player-2;
+
+.@{player-up} {
+  .main-set;
+  &-start {
+    background-color: red;
+  }
+  &-stop {
+    background-color: green;
+  }
+  &-pause {
+    background-color: blue;
+  }
+}
+
+.@{player-down} {
+  .main-set;
+  &-start {
+    background-color: #555;
+  }
+  &-stop {
+    background-color: #222;
+  }
+  &-pause {
+    background-color: #ccc;
+  }
+}
