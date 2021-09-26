@@ -1,0 +1,32 @@
+﻿@height-start: 400px;
+
+.half(@a, @b) {
+  @half: @a * @b;
+}
+
+div {
+  height: @height-start;
+  width: 50px;
+  display: inline-block;
+  background-color: green;
+}
+
+#p1 {
+  .half(@height-start, 0.5);
+  height: @half;
+}
+
+#p2 {
+  .half(@height-start, 0.25);
+  height: @half;
+}
+
+#p3 {
+  .half(@height-start, 0.125);
+  height: @half;
+}
+
+#p4 {
+  .half(@height-start, 0.125*0.5);
+  height: @half;
+}
