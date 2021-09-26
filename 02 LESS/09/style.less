@@ -1,0 +1,44 @@
+﻿// .paragraph-grayscale {
+//   margin: 0;
+//   padding: 20px;
+//   border: 2px solid black;
+//   color: white;
+//   background-color: #999;
+// }
+
+// .paragraph-color {
+//   margin: 0;
+//   padding: 20px;
+//   border: 2px solid yellowgreen;
+//   color: yellowgreen;
+//   background-color: green;
+// }
+
+// -Wersja druga:
+
+@paragraph-mode: color;
+
+.paragraph(grayscale) {
+  margin: 0;
+  padding: 20px;
+  border: 2px solid black;
+  color: white;
+  background-color: #999;
+}
+
+.paragraph(color) {
+  margin: 0;
+  padding: 20px;
+  border: 2px solid yellowgreen;
+  color: yellowgreen;
+  background-color: green;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+p {
+  // .paragraph(color);
+  .paragraph(@paragraph-mode);
+}
