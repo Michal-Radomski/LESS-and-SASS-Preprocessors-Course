@@ -1,11 +1,37 @@
 ﻿/*
-
-length(lista) - zwraca długośc listy
-extract(lista, numer-elementu) - zwraca długośc listy
-
+length(lista) - zwraca długość listy
+extract(lista, numer-elementu) - zwraca długość listy
 */
 
-div {
-	height: 50px;
-	border: 1px solid black;	
+@colors: red, green, blue, yellow, pink;
+
+.blocks(@counter: 1) when (@counter<=5) {
+  .blocks(@counter+1);
+	
+	#b@{counter}{
+    background-color: extract(@colors, @counter);
+  }
 }
+
+// .margins (@list) {
+.margins (...) {
+// margin: @list;
+
+// margin-top: extract(@list, 1);
+// margin-right: extract(@list, 2);
+// margin-bottom: extract(@list, 3);
+// margin-left: extract(@list, 4);
+
+margin-top: extract(@arguments, 1);
+margin-right: extract(@arguments, 2);
+margin-bottom: extract(@arguments, 3);
+// margin-left: extract(@arguments, 4);
+margin-left: extract(@arguments, length(@arguments));
+}
+
+div {
+  height: 50px;
+  border: 1px solid black;
+	.margins(5px 10px 15px 20px)
+}
+.blocks();

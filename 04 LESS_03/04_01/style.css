@@ -1,0 +1,27 @@
+/*
+length(lista) - zwraca długość listy
+extract(lista, numer-elementu) - zwraca długość listy
+*/
+div {
+  height: 50px;
+  border: 1px solid black;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+#b5 {
+  background-color: pink;
+}
+#b4 {
+  background-color: yellow;
+}
+#b3 {
+  background-color: blue;
+}
+#b2 {
+  background-color: green;
+}
+#b1 {
+  background-color: red;
+}

@@ -1,4 +1,4 @@
-﻿/*
+/*
 	rgb(red, green, blue) - zwraca kolor
 
 		red, green, blue - liczby całkowite 0-255
@@ -54,19 +54,13 @@
 			0 (lub 0%) 	- niewidoczne
 			1 (100%)	- widoczne
 */
-
-// @color: rgba(255, 123, 64, 0.5);
-// @color: hsla(90, 70%, 60%, 0.5);
-@color: hsva(90, 70%, 60%, 0.5);
-
 div {
   position: absolute;
 }
-
 .second {
   margin: 30px;
   height: 100px;
   width: 500px;
   border: 3px solid red;
-  background-color: @color;
+  background-color: rgba(99, 153, 46, 0.5);
 }

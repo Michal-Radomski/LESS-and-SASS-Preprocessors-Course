@@ -1,22 +1,18 @@
 ﻿/*
-
 	saturate(kolor, proc)	- zwiększa nasycenie
 	desaturate(kolor, proc)	- zmniejsza nasycenie
 	lighten(kolor, proc)	- rozjaśnia
 	darken(kolor, proc)		- przyciemnia
-	fadein(kolor, proc)		- zmniejsza prześroczystość / zwiększa krycie
-	fadeout(kolor, proc)	- zwiększa orzeźroczystość / zmniejsza krycie
+	fadein(kolor, proc)		- zmniejsza przezroczystość / zwiększa krycie
+	fadeout(kolor, proc)	- zwiększa przezroczystość / zmniejsza krycie
 	fade(kolor, proc)		- nakłada przeźroczystość / krycie
 	tint(kolor, proc)		- balans bieli (zwiększa proporcje bieli)
-	shade(kolor, proc)		- odwrtotność tint (zwiększa proporcje czerni)	
-
+	shade(kolor, proc)		- odwrotność tint (zwiększa proporcje czerni)	
 	greyscale(kolor)		- skala szarości	
-
 */
 
-
-@color: green;
-
+// @color: green;
+@color: hsla(90, 90%, 50%, 0.9);
 
 @height: 20px;
 @number-of-bars: 30;
@@ -26,10 +22,12 @@
 
 	#p@{counter}{
 			top: @height * (@counter - 1);
-			background-color: @color;											
+			// background-color: lighten(@color, 1%*@counter);									
+			// background-color: desaturate(@color, 2.5%*@counter);							
+			background-color: tint(@color, 5%*@counter);							
+			// background-color:greyscale(shade(@color, 5%*@counter));							
 		}
 }
-
 
 body {
 	padding: 0px;
