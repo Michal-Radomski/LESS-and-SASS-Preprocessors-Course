@@ -1,15 +1,45 @@
-/*
-@text-color: #555;
+$text-color: green;
 
-h1, h2, h3, h4, h5, h6 {
+$h1-h6-color: blue;
+$h1-size: 60px;
 
+$p-font-size: 20px;
+$p-text-after: "Added text";
+$-text-after-color: violet;
+$-text-after-weight: bolder;
+
+// $div-border: 1px solid blue;
+$div-border: 1px solid $-text-after-color;
+$div-margin: 20px 20px 30px 30px;
+$div-padding-LEFT: 20px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $h1-h6-color;
+}
+
+h1 {
+  font-size: $h1-size;
 }
 
 p {
-	color: @text-color;
+  color: $text-color;
+  font-size: $p-font-size;
+}
+p:after {
+  font-size: $p-font-size;
+  color: $-text-after-color;
+  content: $p-text-after;
+  font-weight: $-text-after-weight;
 }
 
-div  {
-
+div {
+  color: pink;
+  border: $div-border;
+  margin: $div-margin;
+  padding-left: $div-padding-LEFT;
 }
-*/

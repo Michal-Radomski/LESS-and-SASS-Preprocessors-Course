@@ -1,1 +1,38 @@
-﻿
+﻿@mixin border {
+  border-bottom: 2px solid red; // - W ciałach domieszek nie może być definicja innej domieszki!
+}
+
+@mixin format {
+  .top {
+    margin-top: 50px;
+    .header {
+      @include border;
+      h1 {
+        font-size: 40px;
+        color: #555;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 12px;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+    .main-content {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@include format; // -Wywołanie domieszki
+
+p.button {
+  float: right; // -Zagnieżdżenie do 3-4 poziomów
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+}

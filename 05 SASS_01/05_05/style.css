@@ -1,0 +1,36 @@
+.top {
+  margin-top: 50px;
+}
+
+.top .header {
+  border-bottom: 2px solid red;
+}
+
+.top .header h1 {
+  font-size: 40px;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.top .header p {
+  font-size: 12px;
+}
+
+.top .header p span {
+  font-weight: bold;
+}
+
+.top .main-content p {
+  font-size: 16px;
+}
+
+p.button {
+  float: right;
+}
+
+p.button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

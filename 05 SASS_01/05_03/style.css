@@ -1,0 +1,24 @@
+#elements:after {
+  content: " 14, 21 3 4, 5 10 78";
+}
+
+#length:after {
+  content: " 3";
+}
+
+#first:after {
+  content: " 14";
+}
+
+#second:after {
+  content: " 21 3 4";
+}
+
+#last:after {
+  content: " 5 10 78";
+}
+
+#list2-second-el:after {
+  content: " 3";
+}
+/*# sourceMappingURL=style.css.map */

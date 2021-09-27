@@ -1,1 +1,42 @@
-﻿
+﻿@mixin b-line {
+  border-width: 6px;
+  border-style: solid;
+}
+
+@mixin b-color($color: darkorchid, $bg-color: orange) {
+  border-color: $color;
+  background-color: $bg-color;
+}
+
+@mixin margins($parm1: 1px 2px 3px 4px, $parm2: 5px 6px 7px 8px) {
+  margin: $parm1;
+  padding: $parm2;
+}
+
+@mixin shadow($par...) {
+  box-shadow: $par;
+}
+
+div {
+  @include b-line();
+  @include margins();
+}
+.level-1 {
+  @include b-color(#f0f, #0f0);
+}
+.level-2 {
+  @include b-color();
+}
+.level-3 {
+  @include b-color(blue, yellow);
+
+  height: 200px;
+
+  p {
+    margin: 10px;
+    span {
+      padding: 5px;
+      @include shadow(3px 3px 2px #222, 5px 5px 10px red, 10px 10px 20px blue, 20px 20px 40px yellowgreen);
+    }
+  }
+}

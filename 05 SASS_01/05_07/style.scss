@@ -1,44 +1,25 @@
-/*
-@height-start: 400px;
+$height-start: 400px;
 
-.half (@a, @b){
-	//@half: @a / @b; // nie musi być tu nazwa domieszki
-	@result: @a / @b;
+@function division($a, $b) {
+  @return $a/$b;
 }
 
-
 div {
-	height: @height-start;
-	width: 50px;
-	display: inline-block;
-	background-color: green;
+  height: $height-start;
+  width: 50px;
+  display: inline-block;
+  background-color: green;
 }
 
 #p1 {
-	.half (@height-start, 2);	
-	//height: .half (@height-start, 2);	// to nie przejdzie
-	//height: @half;
-	height: @result;	
+  height: division($height-start, 2);
 }
-
-#p2{
-	.half (@height-start, 4);	
-	//height: @half;
-	height: @result;		
+#p2 {
+  height: division($height-start, 4);
 }
-
-#p3{
-	.half (@height-start, 8);	
-	//height: @half;
-	height: @result;		
+#p3 {
+  height: division($height-start, 8);
 }
-
-#p4{
-	//@result: 300px;
-	.half (@height-start, 16);	
-	//height: @half;
-	//@result: 300px;
-
-	height: @result;		
+#p4 {
+  height: division($height-start, 16);
 }
-*/

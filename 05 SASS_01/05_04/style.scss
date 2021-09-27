@@ -1,56 +1,65 @@
-﻿/*
-@margin-1: 30px; 
-@margin-2: 25px; 
+﻿$margin-1: 30px;
+$margin-2: 25px;
 
-.padding-and-align {
-	padding: 0px 20px 0px 20px;
-	text-align: justify;
+@mixin padding-and-align {
+  padding: 0px 20px 0px 20px;
+  text-align: justify;
 }
 
-.h1-h2 {
-	font-family: 'Arial';
-	margin-top: @margin-1;
-	margin-bottom: @margin-1;
-	color: #333;
+@mixin h1-h2 {
+  font-family: "Arial";
+  margin-top: $margin-1;
+  margin-bottom: $margin-1;
+  color: #333;
 }
 
-.h3-h4 {
-	font-family: 'Verdana';
-	margin-top: @margin-2;
-	margin-bottom: @margin-2;
-	color: #555;
+@mixin h3-h4 {
+  font-family: "Verdana";
+  margin-top: $margin-2;
+  margin-bottom: $margin-2;
+  color: #555;
 }
-
-
 
 h1 {
-	font-size: 40px;
-	.padding-and-align();
-	.h1-h2;	
+  font-size: 40px;
+  @include padding-and-align();
+  @include h1-h2;
 }
 
 h2 {
-	font-size: 35px;	
-	.padding-and-align;
-	.h1-h2;
+  font-size: 35px;
+  @include padding-and-align;
+  @include h1-h2;
 }
 
 h3 {
-	font-size: 30px;
-	.padding-and-align;
-	.h3-h4;
+  font-size: 30px;
+  @include padding-and-align;
+  @include h3-h4;
 }
 
 h4 {
-	font-size: 25px;
-	.padding-and-align;	
-	.h3-h4;
+  font-size: 25px;
+  @include padding-and-align;
+  @include h3-h4;
+}
+
+// p {
+//   color: #555;
+//   @include padding-and-align;
+// }
+
+@mixin text-align {
+  text-align: justify;
+}
+
+@mixin padding-and-align2 {
+  padding: 0px 20px 0px 20px;
+  color: red;
+  @include text-align;
 }
 
 p {
-	color: #555;
-	.padding-and-align;	
+  color: #555;
+  @include padding-and-align2;
 }
-
-
-*/

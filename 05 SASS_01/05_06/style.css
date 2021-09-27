@@ -1,0 +1,33 @@
+div {
+  border-width: 6px;
+  border-style: solid;
+  margin: 1px 2px 3px 4px;
+  padding: 5px 6px 7px 8px;
+}
+
+.level-1 {
+  border-color: #f0f;
+  background-color: #0f0;
+}
+
+.level-2 {
+  border-color: darkorchid;
+  background-color: orange;
+}
+
+.level-3 {
+  border-color: blue;
+  background-color: yellow;
+  height: 200px;
+}
+
+.level-3 p {
+  margin: 10px;
+}
+
+.level-3 p span {
+  padding: 5px;
+  -webkit-box-shadow: 3px 3px 2px #222, 5px 5px 10px red, 10px 10px 20px blue, 20px 20px 40px yellowgreen;
+          box-shadow: 3px 3px 2px #222, 5px 5px 10px red, 10px 10px 20px blue, 20px 20px 40px yellowgreen;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+div {
+  height: 400px;
+  width: 50px;
+  display: inline-block;
+  background-color: green;
+}
+
+#p1 {
+  height: 200px;
+}
+
+#p2 {
+  height: 100px;
+}
+
+#p3 {
+  height: 50px;
+}
+
+#p4 {
+  height: 25px;
+}
+/*# sourceMappingURL=style.css.map */
