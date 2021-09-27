@@ -1,7 +1,17 @@
 ﻿@background: #00d500;
 
 div {
-	border: 1px solid black;
-	width: 100%;
-	background-color: @background;
+  border: 1px solid maroon;
+  width: 100%;
+  background-color: @background;
 }
+
+.loop(@counter) when (@counter >= 1) {
+  #d@{counter}{
+		 height: (5px * @counter);
+		 background-color: darken(@background, 3.5%*@counter);
+	};
+  .loop(@counter - 1);
+}
+
+.loop(10);

@@ -1,1 +1,22 @@
-﻿
+﻿@h1-red-color: true;
+@h2-blue-color: false;
+
+// h1 when (@h1-red-color=true) {
+//   color: red;
+// }
+// #header1 when (@h1-red-color=true) {
+//   color: blue;
+// }
+
+.optional-header-style() when(@h1-red-color=true) {
+  h1 {
+    color: green;
+  }
+}
+& when (@h2-blue-color=true) {
+  h2 {
+    color: aqua;
+  }
+}
+
+.optional-header-style();

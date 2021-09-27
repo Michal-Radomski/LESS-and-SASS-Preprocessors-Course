@@ -1,0 +1,45 @@
+div {
+  border: 1px solid maroon;
+  width: 100%;
+  background-color: #00d500;
+}
+#d10 {
+  height: 50px;
+  background-color: #002300;
+}
+#d9 {
+  height: 45px;
+  background-color: #003400;
+}
+#d8 {
+  height: 40px;
+  background-color: #004600;
+}
+#d7 {
+  height: 35px;
+  background-color: #005800;
+}
+#d6 {
+  height: 30px;
+  background-color: #006a00;
+}
+#d5 {
+  height: 25px;
+  background-color: #007c00;
+}
+#d4 {
+  height: 20px;
+  background-color: #008e00;
+}
+#d3 {
+  height: 15px;
+  background-color: #009f00;
+}
+#d2 {
+  height: 10px;
+  background-color: #00b100;
+}
+#d1 {
+  height: 5px;
+  background-color: #00c300;
+}

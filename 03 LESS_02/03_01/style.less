@@ -1,19 +1,36 @@
 ﻿/*
-
 Operatory logiczne:  >, >=, =, =<, <
-
 Słowa kluczowe:
 true
 false
-
 , czyli OR (||) - suma logiczna
 and czyli AND (&&) - iloczyn logiczny
 not czyli NOT (!) - negacja
-
 */
 
+// -W LESS zamiast if stosuję się when
+// -True zawsze jest spełniony
+
+// .mixin when (6>5) and ( 1<10) and (true) {
+//   background-color: yellow;
+// }
+
+// .mixin when not (false) {
+//   background-color: yellow;
+// }
+
+@a: 7;
+.mixin(@value; @color: blue) when (@value=6) {
+  background-color: @color;
+}
+.mixin(@value; @color: blue) when (default()) {
+  // -Zastępuje else
+  border: 3px solid red;
+}
+
 div {
-	width: 200px;
-	height: 200px;
-	border: 1px solid black;		
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  .mixin(@a);
 }

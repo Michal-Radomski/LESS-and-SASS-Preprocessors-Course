@@ -1,0 +1,21 @@
+/*
+Sprawdzanie typu:
+iscolor
+isnumber
+isstring
+iskeyword
+isurl
+
+Sprawdzanie jednostek:
+ispixel
+ispercentage
+isem
+isunit
+*/
+p.value:after {
+  content: when;
+  content: "when";
+}
+p.result:after {
+  content: "Zmienna przechowuje keyword";
+}
