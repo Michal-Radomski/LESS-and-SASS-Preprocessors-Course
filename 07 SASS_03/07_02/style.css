@@ -1,4 +1,4 @@
-﻿/*
+/*
 -http://sass-lang.com/documentation/Sass/Script/Functions.html
 percentage($number)
 round($number)
@@ -9,40 +9,39 @@ min($numbers...)
 max($numbers...)
 random([$limit])
 */
-$value: -1 * random();
-
 #random:after {
-  content: "#{$value}";
+  content: "-0.37189";
 }
 
 #percentage:after {
-  content: "#{percentage($value)}";
+  content: "-37.18874%";
 }
 
 #percentage:after {
-  content: "#{percentage($value)}";
+  content: "-37.18874%";
 }
 
 #round:after {
-  content: "#{round($value)}";
+  content: "0";
 }
 
 #ceil:after {
-  content: "#{ceil($value)}";
+  content: "0";
 }
 
 #floor:after {
-  content: "#{floor($value)}";
+  content: "-1";
 }
 
 #abs:after {
-  content: "#{abs($value)}";
+  content: "0.37189";
 }
 
 #min:after {
-  content: "#{min($value, -0.2, -0.4, -0.6, -0.8)}";
+  content: "-0.8";
 }
 
 #max:after {
-  content: "#{max($value, -0.2, -0.4, -0.6, -0.8)}";
+  content: "-0.2";
 }
+/*# sourceMappingURL=style.css.map */

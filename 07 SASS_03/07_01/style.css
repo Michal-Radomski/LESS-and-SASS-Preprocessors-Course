@@ -1,4 +1,4 @@
-﻿/*
+/*
 -http://sass-lang.com/documentation/Sass/Script/Functions.html
 hsl($hue, $saturation, $lightness)
 hsla($hue, $saturation, $lightness, $alpha)
@@ -22,7 +22,6 @@ scale-color($color, [$red], [$green], [$blue], [$saturation], [$lightness], [$al
 change-color($color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha])
 ie-hex-str($color) 
 */
-
 div {
   width: 70px;
   text-align: center;
@@ -32,31 +31,19 @@ div {
   display: inline-block;
 }
 
-@function rgbFunction() {
-  @return rgb(255, 11, 23);
-}
-@function color() {
-  @return rgb(red(#ca3827), green(#00ca33), blue(#3728ca));
-}
-
-// #rgb {
-//   background-color: rgb(255, 11, 33);
-// }
 #rgb {
-  background-color: rgbFunction();
+  background-color: #ff0b17;
 }
 
 #rgba {
   background-color: rgba(255, 11, 33, 0.5);
 }
 
-// #red_green_blue {
-//   background-color: rgb(red(#ca3827), green(#00ca33), blue(#3728ca));
-// }
 #red_green_blue {
-  background-color: color();
+  background-color: #cacaca;
 }
 
 #mix {
-  background-color: mix(#f00, #00f);
+  background-color: purple;
 }
+/*# sourceMappingURL=style.css.map */
