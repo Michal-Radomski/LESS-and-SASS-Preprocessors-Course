@@ -1,0 +1,50 @@
+@charset "UTF-8";
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#hyp1:after {
+  content: "Odnośnik 1";
+}
+
+#hyp2:after {
+  content: "Odnośnik 2";
+}
+
+#hyp3:after {
+  content: "Odnośnik 3";
+}
+
+#hyp4:after {
+  content: "Odnośnik 4";
+}
+
+#hyp5:after {
+  content: "Odnośnik 5";
+}
+
+.more::after {
+  content: "Pokaż więcej";
+}
+
+section .hyperlinks p a {
+  color: green;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+section .hyperlinks p a:hover {
+  color: darkgreen;
+}
+
+section a.more {
+  color: #006e00;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+section a.more:hover {
+  font-style: italic;
+  color: #00a000;
+}
+/*# sourceMappingURL=style.css.map */
