@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*
+Operatory relacji:  >, >=, <, <=, ==, !=
+
+Wartości logiczne: true, false
+
+Operatory logiczne: and, or, not
+*/
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+/*# sourceMappingURL=style.css.map */

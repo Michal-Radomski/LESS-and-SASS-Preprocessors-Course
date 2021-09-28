@@ -1,0 +1,30 @@
+#d1 {
+  background-color: red;
+}
+
+#d2 {
+  background-color: green;
+}
+
+#d3 {
+  background-color: blue;
+}
+
+#d4 {
+  background-color: yellow;
+}
+
+#d5 {
+  background-color: #849920;
+}
+
+#d6 {
+  background-color: #6f7071;
+}
+
+div {
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+}
+/*# sourceMappingURL=style.css.map */
